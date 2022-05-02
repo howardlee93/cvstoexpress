@@ -8,6 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+    "server":"node server.js",
+    "concurrent": "concurrently \"npm run server\" \"npm run dev\" ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,6 +17,7 @@
   "dependencies": {
     "@types/node": "^17.0.31",
     "@vitejs/plugin-react": "^1.3.1",
+    "axios": "^0.27.2",
     "concurrently": "^7.1.0",
     "cors": "^2.8.5",
     "csv-parser": "^3.0.0",
