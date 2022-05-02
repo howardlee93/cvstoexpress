@@ -34,9 +34,9 @@ app.get("/:term" , (req, res) => {
                 console.log(err);
                 },
             complete: result => {
-                const data = [];
-                data.push(result)
-                res.send(data);
+                // const data = [];
+                // data.push(result)
+                res.send(result);
             }
         })
     };
